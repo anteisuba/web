@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // var s = new Set();
+        // var arr = [10,20,30,40,50,50];
+        // arr.forEach(x => s.add(x))
+        // console.log(s);
+
+        // var s = new Set([10,20,30]);
+        // console.log(s);
+
+
+        //数组去除重复成员方法
+        var arr = [10,10,20,20,30,30,10]
+        var s = new Set(arr);
+        //set也可以使用扩展运算符读取数据
+        console.log([...s]);  
+
+        console.log([...new Set("aabbccaddd")].join(""));
+
+
+        //数字5和字符串“5”是不同的,set不会发生类型转换
+        var a = new Set();
+        a.add(5);
+        a.add("5");
+        console.log(a);
+
+        //size属性
+        console.log(a.size);
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>

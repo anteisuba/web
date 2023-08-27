@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var name = "iwen";
+
+        //属性的简介表达法
+        var user = {
+            //属性名和属性值是同样的变量名称就可以省略
+            name,   
+
+            age:20,
+            // getName:function(){
+            //     console.log(this.name);
+            // }
+            getName(){
+                console.log(this.name);
+            }
+        }
+
+        user.getName()
+
+        console.log(user.name);
+
+        //函数的返回值简便
+        function getPoint(){
+            var x = 10.23;
+            var y = 23.34;
+            return { x,y }
+        }
+
+        console.log(getPoint().x,getPoint().y);
+
+        //属性名表达式
+        var ib = ""
+        var user = {
+            [ib]:"web,java,python",
+            age:12
+        }
+
+        //对象的拓展运算符
+        var z = {a:10,b:20}
+        var n = { ...z }
+        console.log(n);  
+    </script>
+</body>
+</html>

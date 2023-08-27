@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person{
+                constructor(name,age){
+                    this.name = name;
+                    this.age = age;
+                }
+
+
+                getName(){
+                    console.log(this.name);
+                }
+
+                static getInfo(){
+                    console.log("yangjian");
+                }
+        }
+
+
+        //extends继承
+        class Student extends Person{
+            constructor(name,age,schoolName){
+                //子类的constructor必须加super调用
+                super(name,age);
+                this.schoolName = schoolName;
+            }
+
+
+            getSchool(){
+                console.log(this.schoolName);
+            }
+        }
+
+        var s = new Student("iwen",15,"erzhong");
+        s.getName();
+        //调用静态用类名调用
+        Student.getInfo();
+        s.getSchool();
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
