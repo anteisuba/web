@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <a href=""></a>
+    <script>
+        console.log("\u0061");  //a
+        console.log("\u0062");  //b  
+
+        var str = "hello"
+        for(let  i of str){
+            console.log(i);   //遍历hello
+        }
+
+        for(let i = 0;i<str.length;i++){
+            console.log(str);  
+        }
+
+        // 动态创建一个a标签，a标签的herf属性也是动态的
+        var href = "https://baidu.com";
+        var text = "百战"
+        //当我们向页面动态写入标签的时候，标签的数据一般来源于服务器
+
+        var itbaizhan = "<a href = '" + href +" '> "+ text +"</a>"
+
+        console.log(itbaizhan);
+
+        //字符串模板
+        var itbaizhan1 = `<a href="${href}">${text}</a>`
+        console.log(itbaizhan1);
+
+    </script>
+</body>
+</html>

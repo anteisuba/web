@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var user = {
+        //     name:"iwen",
+        //     age:20
+        // }
+
+    //利用解构赋值的方式简化
+
+    // const{name,age} = user
+
+    // console.log(name,age);
+
+    // const { log } = console;
+    // log(name,age)
+
+    // const{ abs,floor,random } = Math;
+    // log(random())
+
+    //注：如果将一个已经声明的变量用于解构赋值，必须非常小心
+    let name = "iwen"
+
+    var user = {
+        name:"iwen"
+    }
+    ({ name } = user);
+
+
+
+    </script>
+</body>
+</html>

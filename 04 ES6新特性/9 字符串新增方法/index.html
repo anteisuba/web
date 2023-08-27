@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var allStr = "helloworld"
+        var str = "llo"
+
+        //includes startWith endsWith
+        console.log(allStr.includes(str,6)); //true
+        console.log(allStr.startsWith(str));
+        console.log(allStr.endsWith(str));
+
+        //repeat
+        console.log(allStr.repeat(3));
+
+        //padStart() padEnd()
+        console.log(allStr.padStart(20,'end'));
+        console.log(allStr.padEnd(20,'sad'));
+
+
+        //trimStart trimEnd() 去掉空格
+        const s = '  itbaizhan        '
+        console.log(s);
+        console.log(s.trimStart());
+        console.log(s.trimEnd());
+        console.log(s.trim());
+
+        //at()
+        const str1 = 'hello'
+        console.log(str1.at(2));
+        console.log(str1.at(-2));
+
+        
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
