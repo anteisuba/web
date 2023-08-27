@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shift</title>
+</head>
+<body>
+
+    <script>
+
+        //用于删除数组的第一个元素，并返回该元素。该方法会返回原数组
+
+        var names = ['100,200,300','iwen','frank'];
+        var result = names.shift();
+        console.log(names);  //'iwen','frank'
+        console.log(result); //'100,200,300'
+
+        var arr = [];
+        console.log(arr.shift());  //indefined
+
+
+        //shift方法可以遍历并清空一个数组 
+        var arr1 = [100,200,300];
+        var item;
+        while(item = arr1.shift()){
+            console.log(item);
+        }
+
+        console.log(arr1);
+
+        //unshift 向头部添加一个元素
+        var arr2 = [100];
+        arr2.unshift(200,300,400,'item');
+        console.log(arr2);
+
+    </script>
+</body>
+</html>

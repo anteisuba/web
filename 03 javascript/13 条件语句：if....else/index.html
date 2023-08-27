@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var falg = true;
+        if(falg){
+            console.log("我是杨健");
+        }else{
+            console.log("我不是杨健");
+        }
+
+        //多个if...else连接
+        //0-6代表一周的七天
+        var day = 6;
+
+        if(day === 0){
+            console.log("周一");
+        }else if(day === 1){
+            console.log("周二");
+        }else if(day === 2){
+            console.log("周三");
+        }else if(day === 3){
+            console.log("周四");
+        }else if(day === 4){
+            console.log("周五");
+        }else if(day === 5){
+            console.log("周六");
+        }else if(day === 6){
+            console.log("周日");
+        }
+
+        //if...else的匹配规则：if总是找离他最近(同级)的一个else。if else可以嵌套
+
+        var eat = true;
+        var food = "猪肉"
+        if(eat){
+            if(food === "猪肉"){
+                console.log("猪肉");
+            }else{
+                console.log("黄瓜");
+            }
+        }else{
+            cnosole.log("不吃饭")
+        }
+
+    </script>
+</body>
+</html>

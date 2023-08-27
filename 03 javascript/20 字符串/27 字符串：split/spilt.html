@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>split</title>
+</head>
+<body>
+    <script>
+        var name = "it|baizhan|chengxuyuan";
+        console.log(name.split("|")); //['it','baizhan','chengxuyuan'] === 数组
+
+        var name1 = "s|x|t";
+        console.log(name1.split(""));
+
+        var name2 = "hello";
+        console.log(name2.split(""));
+
+        console.log(name2.split());
+
+        //还可以接受第二个参数，返回数组的最大成员数
+        var name3 = "itbaizhanshangxuetang";
+        console.log(name3.split("",5));
+
+    </script>
+</body>
+</html>

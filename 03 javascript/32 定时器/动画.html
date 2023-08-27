@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #someDiv{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="someDiv"></div>
+
+    <script>
+        //通过setInterval方法实现网页动画
+        var div = document.getElementById("someDiv");
+        //透明度属性：opacity:取值范围：0-1
+        var opacity = 1;
+        var fader = setInterval(function(){
+            opacity -= 0.05
+            div.style.opacity = opacity
+            if(opacity > 0){
+                opacity -= 0.05
+                div.style.opacity = opacity
+            }else{
+                clearInterval(fader);
+            }
+        },60)
+
+
+
+    </script>
+
+
+</body>
+</html>

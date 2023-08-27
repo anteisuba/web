@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <form action="服务器地址" id="myForm" onsubmit="submitHandle">  
+        <input type="text" name="username">
+        <button id="resetBtn">重置</button>
+        <button>提交表格</button>
+    </form>
+
+    <script>
+        
+        // onsubmit:向服务器提交时触发
+        
+        var resetBtn = document.getElementById("resetBtn");
+        var myForm = document.getElementById("myForm")
+        resetBtn.onclick = function(){
+            myform.reset(); //触发在表单上，清空表单
+        }
+
+        function submitHandle(){
+            console.log("想做的事情");
+        }
+
+    </script>
+
+</body>
+</html>

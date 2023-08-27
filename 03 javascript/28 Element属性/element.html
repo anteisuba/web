@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 100px;
+        }
+
+        .box1{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box" id="root">Hello</div>
+
+    <script>
+        //Element.id  读写id
+        var root = document.getElementById("root");
+        root.id = "roots";
+
+        //Element classNmae  读写class
+        root.className = "box box1";  //box box1
+
+        //Element.classList 
+        //add：与原始的class不冲突
+        root.classList.add("mybox");
+        //remove:移除box1
+        root.classList.remove("box1");
+        
+        //contains：判断是否有box1
+        if(root.classList.contains("box1")){
+            console.log("yes");
+        }else{
+            console.log("no");
+        }
+
+        //toggle ：有则去除，没有则添加
+        root.classList.toggle("box1")
+
+        //innerHTML
+        // console.log(root.innerHTML);
+        // root.innerHTML = "dajiahao";
+
+        //innerText
+        console.log(root.innerText);
+        root.innerText = "wahhahahaha"
+
+
+        //innerHTML和innerText的区别：innerHTML可以识别标签，而innerText会把标签识别成字符串
+        var str = "<a href='https://www.itbaizhan.com'>baizhan</a>"
+
+        // root.innerHTML = str
+        root.innerText = str
+       
+
+        
+
+    </script>
+
+</body>
+</html>

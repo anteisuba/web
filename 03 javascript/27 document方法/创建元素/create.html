@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create</title>
+</head>
+<body>
+    <div class="nav">导航</div>
+
+    <div id="container"></div>
+    <script>
+        var text = document.createElement("p")  //创建p标签
+        var content = document.createTextNode("我是文本") //创建内容“我是文本”
+        var id = document.createAttribute("id")  //创建属性id
+        //将root放入id中
+        id.value = "root"
+
+
+        //appendChild:将内容或者子元素放到容器中，将“我是文本”放入p标签中
+        text.appendChild(content);
+       //setAttributeNode:属性的添加，将id放入p标签
+        text.setAttributeNode(id);
+        
+        //将p标签放入div中
+        var container = document.getElementById("container")
+        container.appendChild(text);
+        
+        console.log(text);
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join</title>
+</head>
+<body>
+    <script>
+
+        //将数组转换成字符串
+        var names = [1,2,3,4,null,undefined];  //null和undefined会转换成空字符串
+        console.log(names.join());  //默认以逗号分隔
+        console.log(names.join("|"));  //1|2|3|4
+        console.log(names.join(""));  //1234
+
+        var arr1 = ["hello","world"];
+        var result = arr1.join(" ");
+
+        //join:数组转换成字符串
+        //split:字符串转换成数组
+        console.log(result.split(" "));  //"hello","world"
+        console.log(result);
+
+        
+
+    </script>
+</body>
+</html>

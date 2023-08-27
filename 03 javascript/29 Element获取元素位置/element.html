@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 5px solid red;
+            padding: 10px;
+            margin: 20px;
+            background-color: aqua;
+        }
+
+        h3{
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="box" id="box"></div>
+    <h3>标题一</h3>
+    <h3>标题2</h3>
+    <h3>标题3</h3>
+    <h3>标题4</h3>
+
+    <script>
+        var box = document.getElementById("box");
+        //padding+height/width
+        console.log(box.clientWidth);
+        console.log(box.clientHeight);
+
+        //视口高度(屏幕高度)
+        console.log(document.documentElement.clientHeight);
+        //网页总高度
+        console.log(document.body.clientHeight);
+
+        console.log("------------");
+
+        //scrollHeight scrollWidth:总高度 总宽度
+        console.log(box.scrollHeight);
+        console.log(box.scrollWidth);
+
+        //视口高度(屏幕高度)
+        console.log(document.documentElement.scrollHeight);
+        //网页总高度
+        console.log(document.body.scrollWidth);
+
+        //scrollLeft scrollTop:获取滚动高度
+        console.log(document.documentElement.scrollTop);
+        
+        
+        console.log("------------");
+
+
+        //offsetHeight offsetWidth：css的垂直高度和水平高度（包括padding和border
+        console.log(box.offsetHeight);
+        console.log(box.offsetWidth);
+
+        console.log("------------");
+
+        //offsetLeft offsetTop 父级的左边距和父级的上边距
+
+        
+
+
+    </script>
+
+
+
+
+</body>
+</html>

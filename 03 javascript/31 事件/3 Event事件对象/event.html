@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <button id="btn">anniu</button>
+    <a href="https://baidu.com" id="it">itbaizhan</a>
+
+
+    <script>
+
+
+        var btn = document.getElementById("btn");
+    
+        
+        //Event对象，其实就是参数
+        btn.onclick = function(evenet){
+            console.log(event.target);  //点击谁打印出来谁
+            event.target.innerHTML = "dianjizhihou";
+            console.log(event.type);  //click事件
+        }  
+
+
+        var it = document.getElementById("it");
+        it.onclick = function(e){
+            e.preventDefault();   //a标签不在跳转
+            console.log("点击了A");
+        }
+
+
+
+
+    </script>
+</body>
+</html>

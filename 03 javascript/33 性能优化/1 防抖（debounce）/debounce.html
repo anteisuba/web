@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            height: 500px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h3>haha</h3>
+    <h3>haha</h3>
+    <h3>haha</h3>
+    <h3>haha</h3>
+    <h3>haha</h3>
+    <h3>haha</h3>
+
+
+    <script>
+        
+        //滚动事件
+        //onscroll表示监听事件
+        
+        
+        //如果在200ms内没有再次触发滚动事件，那么就执行函数
+        //如果在200ms内再次触发滚动事件，那么当前的计时取消，重新开始计时
+
+        function debounce(fn,delay){
+            var timer = null;
+            return function(){
+                if(timer){
+                    clearTimeout(timer)
+                }
+                timer = setTimeout(fn,delay)
+            }
+        }
+        
+        window.onscroll = debounce(scrollHandle,200)
+
+        function scrollHandle(){
+            var scrollTop = document.documentElement.scrollTop;
+            console.log(scrollTop);
+            //这个函数执行频率太高了！
+        }
+        
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>

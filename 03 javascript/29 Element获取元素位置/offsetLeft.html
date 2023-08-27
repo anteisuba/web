@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .root{
+            height: 500px;
+            width: 500px;
+            background-color: #999999;
+            margin: 50px;
+            position: relative;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="root">
+        
+        <div class="box" id="box"></div>
+    </div>
+    <script>
+
+        var box = document.getElementById("box");
+        //到父级元素的间距
+        console.log(box.offsetHeight);
+        console.log(box.offsetLeft);
+
+
+    </script>
+</body>
+</html>

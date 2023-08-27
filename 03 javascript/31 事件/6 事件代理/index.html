@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 点击所有li标签生效，就是事件代理/事件委托 -->
+    <ul id="list">
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+        <p>hahaha</p>
+    </ul>
+
+    <script>
+
+        var list = document.getElementById("list");
+        list.onclick = function(){
+            console.log("点击");  //点击子元素触发父元素
+        }
+        //list添加一个事件监听
+        list.addEventListener("click",function(e){
+            console.log(event.target.tagName);
+            
+            if(event.target.tagName.toLowerCase() === "li"){
+                console.log(event.target.innerHTML);   //给所有li标签添加事件,获取内容
+                //do something
+            }
+        });
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>
