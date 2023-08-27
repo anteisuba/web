@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            animation: myanime 3s linear 0s 2 ;
+            /* 执行动画 */
+
+        }
+
+
+        div:hover{
+            /* 鼠标划动触发效果 */
+            animation-play-state: paused;
+            /* 划动div时动画暂停 */
+        }
+
+
+        @keyframes myanime{
+            /* keyframes创建动画 */
+            0%{
+                width: 200px;
+                background-color: red;
+            }
+            25%{
+                width: 300px;
+                background-color: red;
+            }
+            50%{
+                width: 400px;
+                background-color: red;
+            }
+            100%{
+                width: 500px;
+                background-color: green;
+            }
+
+
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div></div>
+</body>
+</html>

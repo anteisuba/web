@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: #555;
+            margin: 50px;
+            display:flex;
+            /* 开启弹性模型 */
+            flex-direction: row;
+            /* 盒子排列顺序 */
+            justify-content: center;
+            /* 垂直排列 */
+            align-items: center;
+            /* 水平排列 */
+
+        }
+
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            flex: 2;
+            /* 分配比重（权重） */
+            
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            flex: 2;
+
+        }
+
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

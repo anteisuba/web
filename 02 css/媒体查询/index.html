@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, user-scalable=no">
+                <!-- 当前视口的调整      当前的宽度为设备宽度  默认缩放是1        最大可缩放是1      用户是否允许存放         -->
+    <title>Document</title>
+    <style>
+
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            margin: 30px auto;
+        }
+
+        @media screen and (max-width:768px){
+        /* 规范屏幕的比例   屏幕大小 */
+            .box{
+                background-color: aqua;
+            }
+            .p1{
+                display: none;
+            }
+            .p2{
+                display:none;
+            }
+        }
+
+        @media screen and (min-width:768px) and (max-width:996px){
+            .box{
+                background-color: green;
+            }
+            .p1{
+                display: block;
+            }
+            .p2{
+                display:none;
+            }
+        }
+
+        @media screen and (min-width:996px) {
+            .box{
+                background-color: red;
+            }
+            .p1{
+                display: block;
+            }
+            .p2{
+                display:block;
+            }
+        }
+        /* 小于768是手机 768到996是平板 大于996是电脑 */
+
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    <p class="p1">hahaha</p>
+    <p class="p2">hehehe</p>
+</body>
+</html>
